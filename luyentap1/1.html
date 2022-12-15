@@ -6,13 +6,12 @@
 </head>
 <body>
 <script>
-  let num=+prompt("Nhập vào 1 số:");
   let i=1
-  for(;i<=num;i++ ){
+  for(;i<100;i++ ){
       document.write(i)
-      if (num=99){
-          alert("Đã hoàn thành")
-      }
+  }
+  if (i-=1){
+      alert(i +"Đã hoàn thành")
   }
 </script>
 </body>
