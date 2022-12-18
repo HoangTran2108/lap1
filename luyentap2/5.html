@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số tiền vay:<br>
+<input type="text" name="vay" id="vay"><br>
+Số tháng:<br>
+<input type="text" name="time" id="time"><br>
+Lãi:<br>
+<input type="text" name="lai" id="lai"><br><br>
+<input type="button" onclick="tong()" value="Tính">
+<p>Tổng số tiền phải trả:</p>
+<p id="1"></p>
+</body>
+<script>
+  function tong() {
+    let a = +document.getElementById("vay").value;
+    let b = +document.getElementById("time").value;
+    let c = +document.getElementById("lai").value;
+    for (let i = 0; i < b; i++) {
+      a = a+a*c/100
+    }
+    document.getElementById("1").innerHTML = a
+  }
+</script>
+</html>
